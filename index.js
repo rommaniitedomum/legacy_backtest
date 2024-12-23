@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://legacy-testfront-e1utma6ur-parkjunhos-projects.vercel.app",
+    origin: "legacyprojects.vercel.app",
     credentials: true,
   })
 );
