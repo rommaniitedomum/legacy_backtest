@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(
   cors({
-    origin: "legacyprojects.vercel.app",
+    origin: "https://legacyprojects.vercel.app",
     credentials: true,
   })
 );
