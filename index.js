@@ -19,7 +19,13 @@ const app = express();
 dotenv.config();
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(cors({ credentials: true }));
+app.use(
+  cors({
+    origin:
+      "https://legacy-testfront-nz2w270g5-parkjunhos-projects.vercel.app/",
+    credentials: true,
+  })
+);
 // Swagger 설정
 app.use(
   "/api-docs",
