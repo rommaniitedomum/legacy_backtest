@@ -22,7 +22,7 @@
 - [개발환경](#-개발환경설정)
 - [개발로그](#-개발로그)
 - [디버깅로그](#-디버깅로그)
-- [랭체인구성](#-랭체인)
+- [랭체인 구성](#-랭체인)
 - [자료](#-자료)
 - [연락처](#%EF%B8%8F-연락처)
 
@@ -299,6 +299,31 @@ _결과: chatbot 연결 확인_
 ```
 
 ## 🦜 랭체인
+
+# RAG(Retrieval-Augmented Generation) 챗봇
+
+## RAG 체인 구현
+```python
+rag_chain = (
+    {"context": retriever, "question": RunnablePassthrough()}
+    | prompt
+    | llm
+    | StrOutputParser()
+)
+```
+# retriever: 벡터 데이터베이스에서 관련 컨텍스트를 검색.
+# RunnablePassthrough: 사용자의 질문을 체인에 전달.
+# prompt: 검색된 컨텍스트와 질문을 결합하여 모델 입력 생성.
+# llm: GPT 모델을 통해 답변 생성.
+# StrOutputParser: 생성된 응답을 문자열 형태로 반환.
+
+```
+## 사용된 기술
+# LangChain: RAG 체인을 구축하고 실행하기 위한 라이브러리.
+# OpenAI GPT-3.5: 자연어 이해 및 응답 생성.
+# FAISS 벡터 데이터베이스: 빠르고 효율적인 문서 검색.
+# Python 3.x: 애플리케이션 개발 언어.
+```
 
 ## 📃 자료
 
