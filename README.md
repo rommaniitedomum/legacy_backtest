@@ -253,10 +253,10 @@ You can list all discoverable environments with `conda info --envs`.
 
    - SSH를 통해 EC2 서버에 접속 후 다음 명령 실행:
      conda info --envs
-   -결과: 없음
+-결과: 없음
 
      conda create -n myenv python=3.12.7 (나중에는 워크플로 수정)
-  -결과: myenv 생성
+-결과: myenv 생성
 
 2. ** 라우팅 Linux화 **
    ```javascript
