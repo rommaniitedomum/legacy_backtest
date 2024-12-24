@@ -246,26 +246,6 @@ EnvironmentNameNotFound: Could not find conda environment: myenv
 You can list all discoverable environments with `conda info --envs`.
 ----------------------------------------------------------------
 ```
-
-## **EC2에서 Miniconda 확인하기 (1. myenv 확인, 2.Windows에서 Linux로 전환 체크)**
-
-1. **Miniconda 환경설정**:
-   - SSH를 통해 EC2 서버에 접속 후 다음 명령 실행:
-     conda info --envs
-     _결과: 없음_
-
-
-```
-문제발생
-(python 환경)
-// ... existing error logs ...
-----------------------------------------------------------------
-(PostgreSQL 데이터 삽입 오류)
-psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer
-LINE 1: COPY heritageList (ccbaKdcd,ccbaAsno,ccbaCtcd,ccbaMnm1,ccbaLcad,ccceName,content,imageUrl)
-----------------------------------------------------------------
-```
-
 ## **EC2에서 Miniconda 확인하기 (1. myenv 확인, 2.Windows에서 Linux로 전환 체크)**
 
      conda create -n myenv python=3.12.7 (나중에는 워크플로 수정)
