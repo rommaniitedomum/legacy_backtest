@@ -253,12 +253,16 @@ You can list all discoverable environments with `conda info --envs`.
 
    - SSH를 통해 EC2 서버에 접속 후 다음 명령 실행:
      conda info --envs
--결과: 없음
+
+   
+     결과: 없음
 
      conda create -n myenv python=3.12.7 (나중에는 워크플로 수정)
--결과: myenv 생성
 
-2. ** 라우팅 Linux화 **
+     
+결과: myenv 생성
+
+2.  라우팅 Linux화 
    ```javascript
    // Python 경로 및 스크립트 경로 설정
    const pythonPath = path.join(
@@ -271,7 +275,7 @@ You can list all discoverable environments with `conda info --envs`.
    const scriptPath = path.join(\_\_dirname, "chatbot", "chatbot.py");
 
    let answer = "";
-
+```
   *결과: chatbot 연결 확인*
 
   **문제해결: 다른환경에도 작동하게 Github Actions yml 에 myenv 생성 명령어 추가 **
