@@ -311,11 +311,11 @@ rag_chain = (
     | StrOutputParser()
 )
 ```
-# retriever: 벡터 데이터베이스에서 관련 컨텍스트를 검색.
-# RunnablePassthrough: 사용자의 질문을 체인에 전달.
-# prompt: 검색된 컨텍스트와 질문을 결합하여 모델 입력 생성.
-# llm: GPT 모델을 통해 답변 생성.
-# StrOutputParser: 생성된 응답을 문자열 형태로 반환.
+- retriever: 벡터 데이터베이스에서 관련 컨텍스트를 검색.
+- RunnablePassthrough: 사용자의 질문을 체인에 전달.
+- prompt: 검색된 컨텍스트와 질문을 결합하여 모델 입력 생성.
+- llm: GPT 모델을 통해 답변 생성.
+- StrOutputParser: 생성된 응답을 문자열 형태로 반환.
 
 ```
 ## 사용된 기술
