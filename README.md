@@ -272,7 +272,7 @@ You can list all discoverable environments with `conda info --envs`.
    "bin",
    "python3"
    );
-   const scriptPath = path.join(\_\_dirname, "chatbot", "chatbot.py");
+   const scriptPath = path.join(__dirname, "chatbot", "chatbot.py");
 
    let answer = "";
 ```
