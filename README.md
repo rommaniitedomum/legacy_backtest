@@ -278,7 +278,6 @@ You can list all discoverable environments with `conda info --envs`.
 ```
   *결과: chatbot 연결 확인*
 
- *문제해결: 다른환경에도 작동하게 Github Actions yml 에 myenv 생성 명령어 추가* 
 
 ```yaml
     - name: Create Conda Environment
@@ -287,6 +286,7 @@ You can list all discoverable environments with `conda info --envs`.
     conda create -n myenv python=3.12.7 || echo "Environment already exists."
 
 ```
+ *문제해결: 다른환경에도 작동하게 Github Actions yml 에 myenv 생성 명령어 추가* 
 
 ## 🦜 랭체인
 
