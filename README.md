@@ -249,13 +249,17 @@ You can list all discoverable environments with `conda info --envs`.
 
 ## **EC2에서 Miniconda 확인하기 (1. myenv 확인, 2.Windows에서 Linux로 전환 체크)**
 
-1. **Miniconda 환경설정**:
-   - SSH를 통해 EC2 서버에 접속 후 다음 명령 실행:
-     conda info --envs
-     _결과: 없음_
+## 1. **Miniconda 환경설정**
 
-2. conda create -n myenv python=3.12.7 (나중에는 워크플로 수정)
-        *결과: myenv 생성*
+### 단계별 명령어:
+1. SSH를 통해 EC2 서버에 접속 후 다음 명령어 실행:
+   ```bash
+   conda info --envs
+  *결과 없음* 
+```bash
+conda create -n myenv python=3.12.7
+```
+  *결과: myenv 생성*
 
 2. **라우팅 Linux화**:
 
