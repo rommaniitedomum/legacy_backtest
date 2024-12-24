@@ -300,8 +300,6 @@ _결과: chatbot 연결 확인_
 
 ## 🦜 랭체인
 
-# RAG(Retrieval-Augmented Generation) 챗봇
-
 ## RAG 체인 구현
 ```python
 rag_chain = (
