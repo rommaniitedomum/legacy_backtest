@@ -45,14 +45,7 @@ app.get("/", (req, res) => {
 app.post("/chat", async (req, res) => {
   try {
     const { question } = req.body;
-    // 추가 함
-    // const pythonPath = path.join(
-    //   "/home/ubuntu/miniconda",
-    //   "envs",
-    //   "myenv",
-    //   "bin",
-    //   "python3"
-    // );
+
     const scriptPath = path.join(__dirname, "chatbot", "chatbot.py");
     // const result = spawn(pythonPath, [scriptPath, question]);
     const phythonPath = path.join(
